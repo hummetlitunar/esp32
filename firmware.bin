@@ -1,0 +1,41 @@
+// Motor fonksiyonları
+void ileri() {
+  Serial.println("İleri gidiyor...");
+  digitalWrite(STBY, HIGH);
+  digitalWrite(AIN1, HIGH);
+  digitalWrite(AIN2, LOW);
+  digitalWrite(BIN1, HIGH);
+  digitalWrite(BIN2, LOW);
+}
+
+void geri() {
+  Serial.println("Geri gidiyor...");
+  digitalWrite(STBY, HIGH);
+  digitalWrite(AIN1, LOW);
+  digitalWrite(AIN2, HIGH);
+  digitalWrite(BIN1, LOW);
+  digitalWrite(BIN2, HIGH);
+}
+
+void sola() {
+  Serial.println("Sola dönüyor...");
+  digitalWrite(STBY, HIGH);
+  digitalWrite(AIN1, LOW);
+  digitalWrite(AIN2, HIGH);
+  digitalWrite(BIN1, HIGH);
+  digitalWrite(BIN2, LOW);
+}
+
+void saga() {
+  Serial.println("Sağa dönüyor...");
+  digitalWrite(STBY, HIGH);
+  digitalWrite(AIN1, HIGH);
+  digitalWrite(AIN2, LOW);
+  digitalWrite(BIN1, LOW);
+  digitalWrite(BIN2, HIGH);
+}
+
+void dur() {
+  Serial.println("Durdu");
+  digitalWrite(STBY, LOW);
+}
